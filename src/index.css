@@ -6,6 +6,7 @@ body {
   margin: 0;
   width: 100%;
   color: #fff;
+  background-color: #000829;
 }
 
 header {
@@ -13,7 +14,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #000829;
+
   width: 100%;
 }
 
@@ -29,11 +30,12 @@ header {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+
+
 }
 
 .navbar {
   display: flex;
-  background-color: #000829
 }
 
 .navbar ul {
@@ -50,6 +52,12 @@ header {
   font-size: 1.2rem;
 }
 
+.navbar ul li :hover {
+  color: #02bf0f;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
+
 .navbar ul li a {
   text-decoration: none;
   color: #fff;
@@ -60,7 +68,11 @@ header {
   gap: 1.5rem;
 }
 
+
 .social-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
   color: #fff;
 }
