@@ -1,8 +1,8 @@
 export default function Navbar () {
   return (
-    <nav>
+    <nav className='navbar'>
       <ul>
-        <li>Home</li>
+        <li><a href='#'>Home</a></li>
         <li>About</li>
         <li>Skills</li>
         <li>Projects</li>

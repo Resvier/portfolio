@@ -4,7 +4,7 @@ export default function Header () {
   return (
     <header>
       <div className='logo'>
-        <span>{'<Jt />'}</span>
+        <span>{'<JT/>'}</span>
       </div>
       <Navbar />
       <div className='social-links'>
