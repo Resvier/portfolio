@@ -1,22 +1,32 @@
 import locationPin from '../icons/location-pin.svg'
+import mail from '../icons/mail.svg'
 export default function Footer () {
   return (
     <footer>
-      <div className='info-and-links'>
-        <div className='info'>
-          <p>Francisco Javier Torres Franco</p>
+      <div className='ft-info-and-links'>
+        <div className='ft-info'>
+          <h3>Francisco Javier Torres Franco</h3>
           <p>
-            Desarrollador Fullstack, apasionado por la tecnología y el desarrollo de software.
-            Disponible para trabajo de tiempo completo.
+            Desarrollador apasionado por la
+            tecnología y el desarrollo de software.
+            Disponible para trabajo de tiempo completo
+            o tiempo parcial.
           </p>
-          <a href='mailto:javiertf2000@gmail.com'>javiertf2000@gmail.com</a>
-          <p>
-            <img src={locationPin} alt='Location' />
-            Lugo, Galicia, España
-          </p>
+          <div className='ft-email-and-location'>
+            <div className='ft-email'>
+              <a href='mailto:javiertf2000@gmail.com'>
+                <img src={mail} alt='Email' />
+                <span>javiertf2000@gmail.com</span>
+              </a>
+            </div>
+            <div className='ft-location'>
+              <img src={locationPin} alt='Location' />
+              Lugo, Galicia, España
+            </div>
+          </div>
         </div>
-        <div className='quick-links'>
-          <h3>Quick Links</h3>
+        <div className='ft-quick-links'>
+          <h4>Quick Links</h4>
           <ul>
             <li>Sobre mí</li>
             <li>Skills</li>
@@ -24,20 +34,22 @@ export default function Footer () {
             <li>Contacto</li>
           </ul>
         </div>
-      </div>
-      <div className='featured-projects'>
-        <h3>Featured Projects</h3>
-        <ul>
-          <li>Project 1</li>
-          <li>Project 2</li>
-          <li>Project 3</li>
-        </ul>
+        <div className='ft-featured-projects'>
+          <h4>Featured Projects</h4>
+          <ul>
+            <li>En desarrollo...</li>
+            <li>En desarrollo..</li>
+            <li>En desarrollo..</li>
+          </ul>
+          <a href='https://github.com/Resvier'>ver todos los proyectos</a>
+        </div>
       </div>
       <hr />
-      <div>
+      <div className='ft-copyright'>
         <p>Copyright © {new Date().getFullYear()} Francisco Javier Torres Franco</p>
         <ul>
           <li>fullstack developer</li>
+          <hr />
           <li>Disponible para trabajar</li>
         </ul>
       </div>

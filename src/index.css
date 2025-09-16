@@ -1,10 +1,17 @@
 * {
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
-  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   color: #fff;
   background-color: #000829;
 }
@@ -12,10 +19,11 @@ body {
 header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-
   width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
 }
 
 .logo {
@@ -24,6 +32,7 @@ header {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-align: center;
+
   background: linear-gradient(to right, #006106, #00ff33);
 
   -webkit-background-clip: text;
@@ -41,6 +50,7 @@ header {
 .navbar ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1.5rem;
   width: 100%;
@@ -50,6 +60,7 @@ header {
 
 .navbar ul li {
   font-size: 1.2rem;
+  justify-content: space-evenly;
 }
 
 .navbar ul li :hover {
@@ -66,6 +77,8 @@ header {
 .social-links {
   display: flex;
   gap: 1.5rem;
+  width: auto;
+  min-width: 0;
 }
 
 
@@ -75,4 +88,171 @@ header {
   gap: 0.5rem;
   text-decoration: none;
   color: #fff;
+}
+
+main {
+  background-color: #00ff33;
+}
+
+footer {
+  margin: 0;
+  width: 100%;
+  background-color: #3057f0;
+  overflow-x: hidden;
+}
+
+.ft-info-and-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 1.5rem 1rem;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .ft-info {
+    width: 50%;
+  }
+
+  .ft-quick-links {
+    width: 25%;
+  }
+
+  .ft-featured-projects {
+    width: 25%;
+  }
+
+  .social-links {
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding: 0 2rem;
+  }
+
+  .ft-info-and-links {
+    margin: 1.5rem 2rem;
+  }
+}
+
+.ft-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 1.5rem 0 1.5rem 0;
+  padding: 0;
+}
+
+.ft-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.ft-info p {
+  width: 50%;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.ft-email-and-location {
+  display: flex;
+  flex-direction: column;
+}
+
+.ft-email {
+  display: flex;
+  align-items: center;
+}
+
+.ft-email a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.ft-email a :hover {
+  color: #02bf0f;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
+
+.ft-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ft-quick-links {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0 1.5rem 0;
+  padding: 0;
+}
+
+.ft-quick-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ft-quick-links ul li {
+  font-size: 0.9rem;
+  text-align: left;
+  font-weight: 400;
+  gap: 0.5rem;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.ft-featured-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 1.5rem 0 1.5rem 0;
+  padding: 0;
+}
+
+.ft-featured-projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.ft-featured-projects a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 400;
+  gap: 0.5rem;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.ft-copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.ft-copyright ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  padding: 0 1.5rem;
+}
+
+.ft-copyright ul li {
+  font-size: 0.9rem;
 }
