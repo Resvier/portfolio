@@ -1,5 +1,5 @@
 import ProjectCard from '../cards/ProjectCard'
-import github from '../../icons/github.svg'
+import github from '../../media/icons/github.svg'
 import { projects } from '../../data/projects'
 import { info } from '../../data/info'
 
@@ -9,7 +9,7 @@ export default function ProjectsSection () {
   ))
   return (
     <section className='projects-section'>
-      <h2>Projects</h2>
+      <h2>- Projects</h2>
       <div className='projects-container'>
         {projectsList}
       </div>

@@ -7,7 +7,7 @@ export default function SkillsSection () {
   ))
   return (
     <section className='skills-section'>
-      <h2>Skills</h2>
+      <h2>- Habilidades</h2>
       <div className='skills-container'>
         <ul className='skills-types'>
           <li><button>All</button></li>

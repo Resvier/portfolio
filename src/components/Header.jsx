@@ -1,7 +1,7 @@
 import Navbar from './Navbar'
-import mail from '../icons/mail.svg'
-import github from '../icons/github.svg'
-import linkedin from '../icons/linked-in.svg'
+import mail from '../media/icons/mail.svg'
+import github from '../media/icons/github.svg'
+import linkedin from '../media/icons/linked-in.svg'
 import { info } from '../data/info'
 
 export default function Header () {

@@ -1,5 +1,5 @@
-import locationPin from '../icons/location-pin.svg'
-import mail from '../icons/mail.svg'
+import locationPin from '../media/icons/location-pin.svg'
+import mail from '../media/icons/mail.svg'
 import { info } from '../data/info'
 export default function Footer () {
   return (
