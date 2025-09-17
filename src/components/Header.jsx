@@ -1,6 +1,7 @@
 import Navbar from './Navbar'
 import mail from '../icons/mail.svg'
 import github from '../icons/github.svg'
+import { info } from '../data/info'
 
 export default function Header () {
   return (
@@ -10,11 +11,11 @@ export default function Header () {
       </div>
       <Navbar />
       <div className='social-links'>
-        <a target='_blank' rel='noopener noreferrer' href='https://github.com/Resvier'>
+        <a target='_blank' rel='noopener noreferrer' href={info.github}>
           <img src={github} alt='GitHub' />
           GitHub
         </a>
-        <a target='_blank' rel='noopener noreferrer' href='mailto:javiertf2000@gmail.com'>
+        <a target='_blank' rel='noopener noreferrer' href={`mailto:${info.email}`}>
           <img src={mail} alt='Email' />
           Email
         </a>

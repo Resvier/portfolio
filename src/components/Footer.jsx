@@ -1,5 +1,6 @@
 import locationPin from '../icons/location-pin.svg'
 import mail from '../icons/mail.svg'
+import { info } from '../data/info'
 export default function Footer () {
   return (
     <footer>
@@ -14,14 +15,14 @@ export default function Footer () {
           </p>
           <div className='ft-email-and-location'>
             <div className='ft-email'>
-              <a href='mailto:javiertf2000@gmail.com'>
+              <a href={`mailto:${info.email}`}>
                 <img src={mail} alt='Email' />
-                <span>javiertf2000@gmail.com</span>
+                <span>{info.email}</span>
               </a>
             </div>
             <div className='ft-location'>
               <img src={locationPin} alt='Location' />
-              Lugo, Galicia, España
+              {info.location}
             </div>
           </div>
         </div>
@@ -41,7 +42,7 @@ export default function Footer () {
             <li>En desarrollo..</li>
             <li>En desarrollo..</li>
           </ul>
-          <a href='https://github.com/Resvier'>ver todos los proyectos</a>
+          <a href={info.github}>ver todos los proyectos</a>
         </div>
       </div>
       <hr />

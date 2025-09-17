@@ -1,4 +1,7 @@
 export default function SkillsSection ({ skills }) {
+  const skillsList = skills.map((skill) => (
+    <li key={skill.id}>{skill.name}</li>
+  ))
   return (
     <section className='skills-section'>
       <h2>Skills</h2>
@@ -12,9 +15,7 @@ export default function SkillsSection ({ skills }) {
           <li>herramientas</li>
         </ul>
         <ul className='skills-list'>
-          {skills.map((skill) => (
-            <li key={skill.id}>{skill.name}</li>
-          ))}
+          {skillsList}
         </ul>
       </div>
     </section>
