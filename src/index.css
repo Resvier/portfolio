@@ -20,9 +20,8 @@ body {
 
 header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 100%;
   padding: 0 2rem;
@@ -34,8 +33,19 @@ header {
   z-index: 100;
 }
 
-.logo {
+.header-container {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.logo {
+  display: 0 0 auto;
   font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -49,17 +59,16 @@ header {
 }
 
 .navbar {
+  flex: 1 1 auto;
   display: flex;
-  margin-left: 2rem;
+  justify-content: center;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
-  margin-left: 2rem;
+  gap: 1.5rem;
 }
 
 .navbar ul li {
@@ -79,6 +88,7 @@ header {
 }
 
 .social-links {
+  flex: 0 0 auto;
   display: flex;
   gap: 1.5rem;
   width: auto;
@@ -109,6 +119,10 @@ main {
 }
 
 main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
@@ -151,6 +165,9 @@ main section h2 {
 }
 
 /* Home section */
+.home-section {
+  margin: 5rem 0;
+}
 
 .home-container {
   display: flex;
@@ -212,6 +229,11 @@ main section h2 {
 /* Main sections */
 
 /* About section */
+.about-section {
+  margin: 5rem 0;
+}
+
+
 
 .about-container {
   display: flex;
@@ -221,6 +243,15 @@ main section h2 {
   width: 100%;
   max-width: 100%;
   padding: 0 2rem;
+}
+
+.about-container-img img {
+  max-width: 20rem;
+  max-height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 15px rgb(255, 255, 255);
 }
 
 .about-container p {
@@ -233,7 +264,7 @@ main section h2 {
   width: 80%;
 }
 
-.about-container a {
+.about-container-download a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -249,6 +280,9 @@ main section h2 {
 }
 
 /* Skills section */
+.skills-section {
+  margin: 5rem 0;
+}
 
 .skills-container {
   display: flex;
@@ -327,8 +361,7 @@ main section h2 {
 
 /* Projects section */
 .projects-section {
-  text-align: left;
-
+  margin: 5rem 0;
 }
 
 
@@ -456,6 +489,10 @@ main section h2 {
 }
 
 /* Contact section */
+.contact-section {
+  margin: 5rem 0;
+}
+
 .contact-container {
   display: flex;
   flex-direction: column;
