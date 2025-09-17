@@ -13,7 +13,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   color: #fff;
-  background-color: #000829;
+  background-color: var(--darkreader-bg--bg-main, var(--darkreader-background-ffffff, #191b1c));
 }
 
 header {
@@ -24,6 +24,7 @@ header {
   width: 100%;
   max-width: 100%;
   padding: 0 1rem;
+  background-color: var(--darkreader-bg--bg-main, var(--darkreader-background-ffffff, #00aaff3c));
 }
 
 .logo {
@@ -91,13 +92,12 @@ header {
 }
 
 main {
-  background-color: #00ff33;
+  background-color: var(--darkreader-bg--bg-main, var(--darkreader-background-ffffff, #537485));
 }
 
 footer {
   margin: 0;
   width: 100%;
-  background-color: #3057f0;
   overflow-x: hidden;
 }
 

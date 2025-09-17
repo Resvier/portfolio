@@ -1,4 +1,5 @@
-import ProjectCard from './ProjectCard'
+import ProjectCard from '../cards/ProjectCard'
+import github from '../../icons/github.svg'
 
 export default function ProjectsSection ({ projects }) {
   return (
@@ -9,6 +10,10 @@ export default function ProjectsSection ({ projects }) {
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
+      <a href='https://github.com/Resvier'>
+        <img src={github} alt='GitHub' />
+        Ver más en GitHub
+      </a>
     </section>
   )
 }
