@@ -1,6 +1,6 @@
 export default function HomeSection () {
   return (
-    <section className='home-section'>
+    <section id='home' className='home-section'>
       <div className='home-container'>
         <div className='home-content'>
           <span>Hola, soy</span>

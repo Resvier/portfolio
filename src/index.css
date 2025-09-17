@@ -21,11 +21,11 @@ body {
 header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   max-width: 100%;
-  padding: 0 1rem;
+  padding: 0 2rem;
   background-color: var(--darkreader-bg--bg-main, var(--darkreader-background-ffffff, #151139));
   position: fixed;
   top: 0;
@@ -39,10 +39,7 @@ header {
   font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: 0.1em;
-  text-align: center;
-
   background: linear-gradient(to right, #006106, #00ff33);
-
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -53,6 +50,7 @@ header {
 
 .navbar {
   display: flex;
+  margin-left: 2rem;
 }
 
 .navbar ul {
@@ -60,15 +58,13 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1.5rem;
-  width: 100%;
-  padding: 0;
-
+  gap: 1rem;
+  margin-left: 2rem;
 }
 
 .navbar ul li {
   font-size: 1.2rem;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .navbar ul li :hover {
@@ -114,9 +110,35 @@ main {
 
 main section {
   width: 100%;
-  max-width: 70%;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  main section {
+    max-width: 80%;
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main section {
+    max-width: 70%;
+    padding: 3rem 2rem;
+  }
+}
+
+main section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  main section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 main section h2 {
@@ -429,6 +451,61 @@ main section h2 {
   letter-spacing: 0.05em;
 }
 
+.projects-section-github a>span {
+  margin-top: 0.2rem;
+}
+
+/* Contact section */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+
+.contact-container-text p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: left;
+  width: 80%;
+  max-width: 100%;
+  padding: 0 3rem;
+}
+
+.contact-container-linkedin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1.5rem;
+  padding: 0 3rem;
+}
+
+.contact-container-linkedin a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  background-color: #19191d;
+  gap: 0.5rem;
+}
+
+.contact-container-linkedin a>span {
+  margin-top: 0.3rem;
+}
+
+
+
 
 
 
@@ -459,40 +536,25 @@ footer {
 
 .ft-info-and-links {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  flex-wrap: wrap;
-  margin: 1.5rem 1rem;
-  padding: 0;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
 }
 
 @media (min-width: 768px) {
-  .ft-info {
-    width: 50%;
-  }
-
-  .ft-quick-links {
-    width: 25%;
-  }
-
-  .ft-featured-projects {
-    width: 25%;
-  }
-
-  .social-links {
-    width: auto;
+  .ft-info-and-links {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1.5rem 1rem;
   }
 }
 
 @media (min-width: 1024px) {
-  header {
-    padding: 0 2rem;
-  }
-
   .ft-info-and-links {
     margin: 1.5rem 2rem;
   }
 }
+
 
 .ft-info {
   display: flex;
