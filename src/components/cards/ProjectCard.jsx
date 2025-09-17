@@ -10,24 +10,30 @@ export default function ProjectCard ({ project }) {
   ))
   return (
     <div className='project-card'>
-      <div className='project-card-header'>
+      <div
+        className='project-card-header'
+        style={{ background: project.gradient }}
+      >
         <a href={project.github} target='_blank' rel='noopener noreferrer'>
           <img src={github} alt='GitHub' />
         </a>
         <a href={project.link} target='_blank' rel='noopener noreferrer'>
           <img src={external} alt='External link' />
         </a>
-
       </div>
       <div className='project-card-body'>
         <h3>{project.name}</h3>
         <p>{project.description}</p>
+        <h4>Key Features</h4>
         <ul className='project-key-features'>
-          {keyFeaturesList}
+          <span> </span>{keyFeaturesList}
         </ul>
-        <ul className='project-technologies'>
-          {technologiesList}
-        </ul>
+        <div className='project-technologies'>
+          <h4>Technologies</h4>
+          <ul>
+            {technologiesList}
+          </ul>
+        </div>
 
       </div>
 

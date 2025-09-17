@@ -13,10 +13,12 @@ export default function ProjectsSection () {
       <div className='projects-container'>
         {projectsList}
       </div>
-      <a href={info.github}>
-        <img src={github} alt='GitHub' />
-        Ver más en GitHub
-      </a>
+      <div className='projects-section-github'>
+        <a href={info.github}>
+          <img src={github} alt='GitHub' />
+          <span>Ver más en GitHub</span>
+        </a>
+      </div>
     </section>
   )
 }
