@@ -9,21 +9,21 @@ export default function Header () {
     <header>
       <div className='header-container'>
         <div className='logo'>
-          <span>{'<JT/>'}</span>
+          <span>{'<JavierTorresDev/>'}</span>
         </div>
         <Navbar />
         <div className='social-links'>
           <a target='_blank' rel='noopener noreferrer' href={info.github}>
             <img src={github} alt='GitHub' />
-            GitHub
+            <span>GitHub</span>
           </a>
           <a target='_blank' rel='noopener noreferrer' href={`mailto:${info.email}`}>
             <img src={mail} alt='Email' />
-            Email
+            <span>Email</span>
           </a>
           <a target='_blank' rel='noopener noreferrer' href={info.linkedin}>
             <img src={linkedin} alt='LinkedIn' />
-            LinkedIn
+            <span className='social-links-linkedin'>LinkedIn</span>
           </a>
         </div>
       </div>

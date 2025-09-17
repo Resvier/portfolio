@@ -13,15 +13,17 @@ export default function ContactSection () {
             Si tienes alguna pregunta o te interesa mi trabajo,
             no dudes en contactarme.Incluso si solo
             es para tener una conversación!
-
           </p>
         </div>
         <div className='contact-container-linkedin'>
-          <a href={info.linkedin}>
-            <img src={linkedin} alt='LinkedIn' />
-            <span>Encuentrame en LinkedIn</span>
-          </a>
+          <div className='contact-container-linkedin'>
+            <a href={info.linkedin}>
+              <img src={linkedin} alt='LinkedIn' />
+              <span>Encuentrame en LinkedIn</span>
+            </a>
+          </div>
         </div>
+
       </div>
     </section>
   )

@@ -8,8 +8,8 @@ export default function HomeSection () {
           <span>Desarrollador</span>
         </div>
         <div className='home-links'>
-          <a href='#projects'>Ver Proyectos</a>
-          <a href='#contact'>Contactame</a>
+          <a href='#projects' className='home-links-projects'><span>Ver Proyectos</span></a>
+          <a href='#contact' className='home-links-contact'><span>Contactame</span></a>
         </div>
       </div>
     </section>
