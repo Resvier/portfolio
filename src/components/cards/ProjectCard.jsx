@@ -8,7 +8,7 @@ export default function ProjectCard ({ project }) {
   return (
     <div className='project-card'>
       <div className='project-card-header'>
-        <img src={project.icon} alt={project.type} />
+        <img src={project.image} alt={project.type} />
         <a href={project.link} target='_blank' rel='noopener noreferrer'>Ver proyecto</a>
         <a href={project.github} target='_blank' rel='noopener noreferrer'>Ver en GitHub</a>
       </div>

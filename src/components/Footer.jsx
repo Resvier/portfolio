@@ -9,7 +9,7 @@ export default function Footer () {
           <h3>Francisco Javier Torres Franco</h3>
           <p>
             Desarrollador apasionado por la
-            tecnología y el desarrollo de software.
+            tecnología y el software.
             Disponible para trabajo de tiempo completo
             o tiempo parcial.
           </p>

@@ -8,7 +8,7 @@ export const projects = [
     type: 'frontend',
     technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
     keyFeatures: ['Responsive design', 'Interactive elements', 'Dynamic content'],
-    github: 'https://github.com/Resvier/Rick-and-Morty-web'
+    github: 'https://github.com/Resvier/Rick_and_Morty_web'
   }
 
 ]

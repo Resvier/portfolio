@@ -1,18 +1,21 @@
-export default function SkillsSection ({ skills }) {
+import { skills } from '../../data/skills'
+import SkillCard from '../cards/SkillCard'
+
+export default function SkillsSection () {
   const skillsList = skills.map((skill) => (
-    <li key={skill.id}>{skill.name}</li>
+    <SkillCard key={skill.id} skill={skill} />
   ))
   return (
     <section className='skills-section'>
       <h2>Skills</h2>
       <div className='skills-container'>
         <ul className='skills-types'>
-          <li>All</li>
-          <li>frontend</li>
-          <li>backend</li>
-          <li>lenguajes</li>
-          <li>bases de datos</li>
-          <li>herramientas</li>
+          <li><button>All</button></li>
+          <li><button>frontend</button></li>
+          <li><button>backend</button></li>
+          <li><button>lenguajes</button></li>
+          <li><button>bases de datos</button></li>
+          <li><button>herramientas</button></li>
         </ul>
         <ul className='skills-list'>
           {skillsList}
