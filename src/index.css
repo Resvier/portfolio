@@ -26,7 +26,12 @@ header {
   width: 100%;
   max-width: 100%;
   padding: 0 1rem;
-  background-color: var(--darkreader-bg--bg-main, var(--darkreader-background-ffffff, #00aaff3c));
+  background-color: var(--darkreader-bg--bg-main, var(--darkreader-background-ffffff, #151139));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .logo {
@@ -103,9 +108,27 @@ main {
   justify-content: center;
   width: 100%;
   max-width: 100%;
-  padding: 0 1rem;
+  margin: 0 auto;
   overflow-x: hidden;
 }
+
+main section {
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+main section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+}
+
+/* Home section */
 
 .home-container {
   display: flex;
@@ -144,6 +167,7 @@ main {
 .home-links {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin: 1rem 0;
@@ -159,6 +183,45 @@ main {
   font-weight: 400;
   letter-spacing: 0.05em;
   border: 1px solid #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Main sections */
+
+/* About section */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 2rem;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin: 0 0 2rem 0;
+  padding: 2rem;
+  width: 80%;
+}
+
+.about-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border: 2px solid #fff;
   padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;
 }

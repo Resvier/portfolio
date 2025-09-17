@@ -16,6 +16,7 @@ export default function App () {
         <SkillsSection />
         <ProjectsSection />
         <ContactSection />
+
       </main>
       <Footer />
     </>
