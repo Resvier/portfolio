@@ -1,3 +1,5 @@
+import github from '../../media/icons/github.svg'
+import external from '../../media/icons/external.svg'
 export default function ProjectCard ({ project }) {
   const keyFeaturesList = project.keyFeatures.map((feature) => (
     <li key={feature}>{feature}</li>
@@ -8,9 +10,13 @@ export default function ProjectCard ({ project }) {
   return (
     <div className='project-card'>
       <div className='project-card-header'>
-        <img src={project.image} alt={project.type} />
-        <a href={project.link} target='_blank' rel='noopener noreferrer'>Ver proyecto</a>
-        <a href={project.github} target='_blank' rel='noopener noreferrer'>Ver en GitHub</a>
+        <a href={project.github} target='_blank' rel='noopener noreferrer'>
+          <img src={github} alt='GitHub' />
+        </a>
+        <a href={project.link} target='_blank' rel='noopener noreferrer'>
+          <img src={external} alt='External link' />
+        </a>
+
       </div>
       <div className='project-card-body'>
         <h3>{project.name}</h3>

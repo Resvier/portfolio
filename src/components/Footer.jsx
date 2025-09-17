@@ -42,7 +42,7 @@ export default function Footer () {
             <li>En desarrollo..</li>
             <li>En desarrollo..</li>
           </ul>
-          <a href={info.github}>ver todos los proyectos</a>
+          <a href={info.github}>Ver todos los proyectos</a>
         </div>
       </div>
       <hr />
