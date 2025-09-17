@@ -1,5 +1,6 @@
 import github from '../../media/icons/github.svg'
 import external from '../../media/icons/external.svg'
+
 export default function ProjectCard ({ project }) {
   const keyFeaturesList = project.keyFeatures.map((feature) => (
     <li key={feature}>{feature}</li>

@@ -6,7 +6,7 @@ export default function SkillsSection () {
     <SkillCard key={skill.id} skill={skill} />
   ))
   return (
-    <section className='skills-section'>
+    <section id='skills' className='skills-section'>
       <h2>- Habilidades</h2>
       <div className='skills-container'>
         <ul className='skills-types'>

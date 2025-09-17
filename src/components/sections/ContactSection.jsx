@@ -1,6 +1,6 @@
 export default function ContactSection () {
   return (
-    <section className='contact-section'>
+    <section id='contact' className='contact-section'>
       <h2>Estemos en contacto</h2>
       <div className='contact-container'>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
