@@ -10,12 +10,12 @@ export default function SkillsSection () {
       <h2>Habilidades</h2>
       <div className='skills-container'>
         <ul className='skills-types'>
-          <li><button>All</button></li>
-          <li><button>frontend</button></li>
-          <li><button>backend</button></li>
-          <li><button>lenguajes</button></li>
-          <li><button>bases de datos</button></li>
-          <li><button>herramientas</button></li>
+          <li><button>Todas</button></li>
+          <li><button>Frontend</button></li>
+          <li><button>Backend</button></li>
+          <li><button>Lenguajes</button></li>
+          <li><button>Bases de datos</button></li>
+          <li><button>Herramientas</button></li>
         </ul>
         <ul className='skills-list'>
           {skillsList}
