@@ -1,5 +1,6 @@
 import locationPin from '../media/icons/location-pin.svg'
 import mail from '../media/icons/mail.svg'
+import phone from '../media/icons/phone.svg'
 import externalLink from '../media/icons/external.svg'
 import { info } from '../data/info'
 export default function Footer () {
@@ -17,7 +18,7 @@ export default function Footer () {
             Disponible para trabajo de tiempo completo
             o tiempo parcial.
           </p>
-          <div className='ft-email-and-location'>
+          <div className='ft-contact-info'>
             <div className='ft-email'>
               <a href={`mailto:${info.email}`}>
                 <img src={mail} alt='Email' />
@@ -27,6 +28,10 @@ export default function Footer () {
             <div className='ft-location'>
               <img src={locationPin} alt='Location' />
               {info.location}
+            </div>
+            <div className='ft-phone'>
+              <img src={phone} alt='Phone' />
+              <span>{info.phone}</span>
             </div>
           </div>
         </div>
