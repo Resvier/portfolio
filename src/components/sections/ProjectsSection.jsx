@@ -9,7 +9,7 @@ export default function ProjectsSection () {
   ))
   return (
     <section id='projects' className='projects-section'>
-      <h2>Projects</h2>
+      <h2>Proyectos</h2>
       <div className='projects-container'>
         {projectsList}
       </div>
