@@ -15,6 +15,10 @@ body {
   color: #fff;
 }
 
+h2 {
+  color: #e95a08;
+}
+
 /* Header */
 
 header {
@@ -323,7 +327,7 @@ main section h2 {
   justify-content: center;
   width: 100%;
   max-width: 100%;
-  padding: 4rem 2rem;
+  padding: 1.5rem 1.5rem;
 }
 
 .about-container-img img {
@@ -352,14 +356,22 @@ main section h2 {
   justify-content: center;
   gap: 0.5rem;
   text-decoration: none;
-  color: #fff;
+  color: #e95a08;
   font-size: 1.1rem;
   font-weight: 500;
   letter-spacing: 0.05em;
-  border: 2px solid #fff;
+  border: 2px solid #e95a08;
   padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;
+  box-shadow: 2px 2px 3px #e95a08;
 }
+
+.about-container-download a:hover {
+  transform: scale(1.05);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
+
 
 /* Skills section */
 .skills-section {
@@ -381,6 +393,7 @@ main section h2 {
   gap: 1rem;
 }
 
+/*06060e*/
 .skills-types button {
   font-size: 1.1rem;
   font-weight: 400;
