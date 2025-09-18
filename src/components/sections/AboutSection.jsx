@@ -3,7 +3,7 @@ import download from '../../media/icons/download.svg'
 import photo from '../../media/images/foto.png'
 export default function AboutSection () {
   return (
-    <section id='about' className='about-section'>
+    <section className='about-section'>
       <h2>Sobre mi</h2>
       <div className='about-container'>
         <div className='about-container-img'>

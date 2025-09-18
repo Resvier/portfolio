@@ -3,7 +3,7 @@ import linkedin from '../../media/icons/linked-in.svg'
 
 export default function ContactSection () {
   return (
-    <section id='contact' className='contact-section'>
+    <section className='contact-section'>
       <h2>Estemos en contacto</h2>
       <div className='contact-container'>
         <div className='contact-container-text'>

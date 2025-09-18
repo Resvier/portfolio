@@ -314,7 +314,7 @@ main section h2 {
 
 /* About section */
 .about-section {
-  margin: 7rem 0;
+  margin: 5rem 0;
 }
 
 
@@ -375,6 +375,7 @@ main section h2 {
 /* Skills section */
 .skills-section {
   margin: 5rem 0;
+  min-height: 100vh;
 }
 
 .skills-container {
@@ -430,6 +431,19 @@ main section h2 {
   transition-duration: 0.3s;
 }
 
+/* Skills active button state */
+.skills-types button.active {
+  background-color: #f16f29;
+  color: #000;
+  border-color: #a76804;
+  box-shadow: 0 0 0 2px rgba(241, 111, 41, 0.25);
+}
+
+.skills-types button.active:hover {
+  background-color: #d45f22;
+  color: #000;
+}
+
 .skill-card {
   border: 1px solid #55250c;
   padding: 1rem;
@@ -479,11 +493,24 @@ main section h2 {
   margin-bottom: 1.5rem;
 }
 
+@media (min-width: 480px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
 @media (min-width: 768px) {
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    max-width: 100%;
   }
 }
+
+
 
 .project-card {
   display: flex;
@@ -494,6 +521,8 @@ main section h2 {
   background-color: #111127;
   box-shadow: 2px 2px 8px #612200;
   height: 100%;
+  width: 100%;
+  max-width: 680px;
 }
 
 .project-card:hover {
@@ -642,7 +671,7 @@ main section h2 {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 1rem;
   border: 1px solid #fff;
   font-size: 1rem;
@@ -650,8 +679,14 @@ main section h2 {
   letter-spacing: 0.05em;
 }
 
-.projects-section-github a>span {
-  margin-top: 0.2rem;
+
+.projects-section-github a:hover {
+  transform: scale(1.02);
+  border: 3px solid #333332;
+  background-color: #333332;
+  box-shadow: 2px 2px 8px #505050;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
 }
 
 /* Contact section */

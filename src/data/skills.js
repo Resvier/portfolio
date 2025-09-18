@@ -1,5 +1,6 @@
 import cursorIcon from '../media/icons/cursor.svg'
 import github48 from '../media/icons/github48.svg'
+import questionIcon from '../media/icons/question.svg'
 
 export const skills = [
   {
@@ -12,7 +13,7 @@ export const skills = [
     id: 2,
     image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
     name: 'CSS',
-    type: 'frontend'
+    type: ['frontend']
   },
 
   {
@@ -26,67 +27,73 @@ export const skills = [
     id: 4,
     image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
     name: 'React',
-    type: 'frontend'
+    type: ['frontend']
   },
 
   {
     id: 5,
     image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
     name: 'Java',
-    type: 'language'
+    type: ['language']
   },
   {
     id: 6,
     image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
     name: 'Python',
-    type: 'language'
+    type: ['language']
   },
   {
     id: 7,
     image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqldeveloper/sqldeveloper-original.svg',
     name: 'SQL',
-    type: 'language'
+    type: '[language]'
   },
   {
     id: 8,
     image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
     name: 'MySQL',
-    type: 'database'
+    type: ['database']
   },
   {
     id: 9,
     image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
     name: 'MongoDB',
-    type: 'database'
+    type: ['database']
   },
   {
     id: 10,
     image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
     name: 'Git',
-    type: 'tools'
+    type: ['tools']
   },
   {
     id: 11,
     image: github48,
     name: 'GitHub',
-    type: 'tools'
+    type: ['tools']
   },
   {
     id: 12,
     image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
     name: 'VSCode',
-    type: 'tools'
+    type: ['tools']
   },
   {
     id: 13,
     image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg',
     name: 'IntelliJ IDEA',
-    type: 'tools'
+    type: ['tools']
   },
   {
     id: 14,
     image: cursorIcon,
     name: 'Cursor',
-    type: 'tools'
+    type: ['tools']
+  },
+  {
+    id: 15,
+    image: questionIcon,
+    name: 'Proximamente',
+    type: ['backend']
   }
 ]

@@ -8,7 +8,7 @@ export default function ProjectsSection () {
     <ProjectCard key={project.id} project={project} />
   ))
   return (
-    <section id='projects' className='projects-section'>
+    <section className='projects-section'>
       <h2>Proyectos</h2>
       <div className='projects-container'>
         {projectsList}

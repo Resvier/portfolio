@@ -12,9 +12,13 @@ export default function App () {
       <Header />
       <main>
         <HomeSection />
+        <br id='about' />
         <AboutSection />
+        <br id='skills' />
         <SkillsSection />
+        <br id='projects' />
         <ProjectsSection />
+        <br id='contact' />
         <ContactSection />
 
       </main>
