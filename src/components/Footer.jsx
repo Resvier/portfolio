@@ -39,13 +39,13 @@ export default function Footer () {
           <h4>Quick Links</h4>
           <ul>
             <li><a href='#about'>Sobre mí</a></li>
-            <li><a href='#skills'>Skills</a></li>
+            <li><a href='#skills'>Habilidades</a></li>
             <li><a href='#projects'>Projectos</a></li>
             <li><a href='#contact'>Contacto</a></li>
           </ul>
         </div>
         <div className='ft-featured-projects'>
-          <h4>Featured Projects</h4>
+          <h4>Proyectos destacados</h4>
           <ul>
             <li>En desarrollo...</li>
             <li>En desarrollo..</li>

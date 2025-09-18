@@ -538,7 +538,7 @@ main section h2 {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  border: 2px solid #6c300f;
+  border: 1px solid #501e00;
   border-radius: 0.9rem;
   background-color: #111127;
   box-shadow: 2px 2px 8px #612200;
@@ -552,8 +552,12 @@ main section h2 {
   transform: translateY(-0.5rem);
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
-
 }
+
+.project-card:hover h3 {
+  color: #9a3901;
+}
+
 
 .project-card-header {
   border-radius: 0.9rem 0.9rem 0 0;
@@ -617,6 +621,7 @@ main section h2 {
 }
 
 .project-card-body h3 {
+  color: #ff7206;
   margin: 0;
   font-size: 1.5rem;
   font-weight: 600;
@@ -640,6 +645,7 @@ main section h2 {
 }
 
 .project-card-body h4 {
+  color: #ff9f67;
   margin: 0;
   font-size: 1rem;
   font-weight: 600;
@@ -682,7 +688,7 @@ main section h2 {
   border: 1px solid #fff;
   border-radius: 1rem;
   padding: 0.5rem 1rem;
-  background-color: #19191d;
+  background-color: #1a1a22;
 
 }
 
