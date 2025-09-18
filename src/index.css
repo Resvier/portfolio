@@ -410,6 +410,7 @@ main section h2 {
   border-radius: 1.3rem;
   padding: 0.5rem 1rem;
   background-color: #111127;
+  border: 1px solid #3a3a80;
   box-shadow: 1px 1px 3px #a76804;
 }
 
@@ -651,33 +652,13 @@ main section h2 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer */
 
 footer {
   margin: 0;
   width: 100%;
   overflow-x: hidden;
+  background-color: #06060e;
 }
 
 .ft-info-and-links {

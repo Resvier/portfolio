@@ -1,4 +1,5 @@
 import cursorIcon from '../media/icons/cursor.svg'
+import github48 from '../media/icons/github48.svg'
 
 export const skills = [
   {
@@ -66,7 +67,7 @@ export const skills = [
   },
   {
     id: 11,
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+    image: github48,
     name: 'GitHub',
     type: 'tools'
   },
