@@ -33,7 +33,7 @@ export default function ProjectCard ({ project }) {
         <p>{project.description}</p>
         <h4>Características clave</h4>
         <ul className='project-key-features'>
-          <span> </span>{keyFeaturesList}
+          {keyFeaturesList}
         </ul>
         <div className='project-technologies'>
           <h4>Tecnologías</h4>
